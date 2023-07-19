@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="user">
+            <div class="user__avatar" data-scroll="#intro">
+              <img src="images/avatar.png" alt="" />
+            </div>
+            <div class="user__content">
+              <div class="user__name">Александр<br />Левченко</div>
+              <div class="user__prof">Разработка сайтов</div>
+            </div>
+          </div>
+
+          <nav class="nav" id="nav">
+            <a class="nav__link" href="#" data-scroll="#work">Портфолио</a>
+            <a class="nav__link" href="#" data-scroll="#about">Обо мне</a>
+            <a class="nav__link" href="#" data-scroll="#blog">Блог</a>
+            <a class="nav__link" href="#" data-scroll="#contact">Контакты</a>
+            <a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire_me">Связаться</a>
+          </nav>
+
+          <button class="burger" type="button" id="navToggle">
+            <img class="burger__icon" src="images/burger.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Intro -->
+    <section class="intro" id="intro">
+      <div class="container">
+        <div class="intro__inner">
+          <div class="intro__content">
+            <h2 class="intro__cubtitle">Дизайн, вёрстка, под ключ</h2>
+            <h1 class="intro__title">Сайт? - не вопрос</h1>
+            <div class="intro__text">Качественно, быстро, недорого (2/3)</div>
+
+            <div class="social">
+              <a class="social__link" href="#" target="_blank">
+                <img class="social__img" src="images/social/telegram.svg" alt="" />
+              </a>
+              <a class="social__link" href="#" target="_blank">
+                <img class="social__img" src="images/social/vk.svg" alt="" />
+              </a>
+              <a class="social__link" href="https://www.behance.net/x_alexlev_x" target="_blank">
+                <img class="social__img" src="images/social/behance.svg" alt="" />
+              </a>
+              <a class="social__link" href="#" target="_blank">
+                <img class="social__img" src="images/social/whatsapp.svg" alt="" />
+              </a>
+              <a class="social__link" href="https://www.instagram.com/x_alexlev_x/" target="_blank">
+                <img class="social__img" src="images/social/instagram.svg" alt="" />
+              </a>
+              <a class="social__link" href="#" target="_blank">
+                <img class="social__img" src="images/social/youtube.svg" alt="" />
+              </a>
+            </div>
+
+            <a class="btn" href="#" data-modal="#modal_hire_me">Связаться</a>
+            <button class="btn btn--active" href="#" data-modal="#modal_resume">
+              Моё резюме
+            </button>
+          </div>
+
+          <img class="intro__photo" src="images/photo.png" alt="" />
+        </div>
+        <!-- /.Intro__inner -->
+      </div>
+      <!-- /.Container -->
+    </section>
+
+    <!-- Works -->
+    <div class="works" id="work">
+      <div class="container">
+        <div class="works__nav">
+          <a class="works__nav-link" href="#" data-filter="all">Все</a>
+          <a class="works__nav-link" href="#" data-filter="landing">Лендинги</a>
+          <a class="works__nav-link" href="#" data-filter="corporate">Корпоративные</a>
+          <a class="works__nav-link" href="#" data-filter="blog">Блоги</a>
+          <a class="works__nav-link" href="#" data-filter="shop">Магазины</a>
+        </div>
+
+        <div class="portfolio">
+          <div class="portfolio__col" data-cat="landing">
+            <div class="work" data-modal="#modal_project_1">
+              <img class="work__image" src="images/work/ironheroGYM/1.JPG" alt="" />
+              <div class="work__content">
+                <div class="work__cat">Категория: Лендинги</div>
+                <div class="work__title">
+                  IronheroGYM
+                  <time class="work__date" datetime="2022-01-22 19:00">2023</time>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__col" data-cat="landing">
+            <div class="work" data-modal="#modal_project_2">
+              <img class="work__image" src="images/work/arthome/1.JPG" alt="" />
+              <div class="work__content">
+                <div class="work__cat">Категория: Лендинги</div>
+                <div class="work__title">
+                  artHome
+                  <time class="work__date" datetime="2023-06-22 19:00">2023</time>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__col" data-cat="corporate">
+            <div class="work" data-modal="#modal_project_3">
+              <img class="work__image" src="images/work/studychinese/1.JPG" alt="" />
+              <div class="work__content">
+                <div class="work__cat">Категория: Корпоративные</div>
+                <div class="work__title">
+                  studychinese
+                  <time class="work__date" datetime="2022-01-22 19:00">2023</time>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__col" data-cat="shop">
+            <div class="work" data-modal="#modal_project_4">
+              <img class="work__image" src="images/work/marcho/1.JPG" alt="" />
+              <div class="work__content">
+                <div class="work__cat">Категория: магазины</div>
+                <div class="work__title">
+                  marcho
+                  <time class="work__date" datetime="2022-07-07 19:00">2023</time>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__col" data-cat="landing">
+            <div class="work" data-modal="#modal_project_5">
+              <img class="work__image" src="images/work/gosurf/1.JPG" alt="" />
+              <div class="work__content">
+                <div class="work__cat">Категория: лендинги</div>
+                <div class="work__title">
+                  goSurf
+                  <time class="work__date" datetime="2022-01-22 19:00">2023</time>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__col" data-cat="landing">
+            <div class="work" data-modal="#modal_project_6">
+              <img class="work__image" src="images/work/paraffinka/1.JPG" alt="" />
+              <div class="work__content">
+                <div class="work__cat">Категория: лендинги</div>
+                <div class="work__title">
+                  paraffinka
+                  <time class="work__date" datetime="2022-01-22 19:00">2023</time>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="portfolio__col" data-cat="blog">
+            <div class="work" data-modal="#modal_project_7">
+              <img class="work__image" src="images/work/personal-blog/1.JPG" alt="" />
+              <div class="work__content">
+                <div class="work__cat">Категория: Блоги</div>
+                <div class="work__title">
+                  personal blog
+                  <time class="work__date" datetime="2022-01-22 19:00">2023</time>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <!-- /.Portfolio -->
+
+        <div class="text-center">
+          <a class="btn btn--sm" href="#">показать больше</a>
+        </div>
+      </div>
+      <!-- /.Container -->
+    </div>
+    <!-- /.Works -->
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__photo">
+            <img class="img" src="images/about/1.jpg" alt="" />
+          </div>
+
+          <div class="about__content">
+            <h3 class="about__title">Обо мне</h3>
+            <h2 class="about__bigtitle">Кто же я</h2>
+            <div class="about__text">
+              <p>
+                Я фронтенд-разработчик. Занимаюсь разработкой сайтов различных
+                сложностей. Делаю лендинги, Корпоративные сайты, портфолио,
+                сайты-визитки, интернет магазины, небольшие игры на
+                javascript. Занимаюсь прототипированием, дизайном, вёрсткой и
+                работой с WordPress
+              </p>
+              <p>
+                <b>СТЕК РАБОТ И ТЕХНОЛОГИЙ</b><br />
+                <b>Дизайн:</b> прототипирование(Axure/Balsamlq), landing page
+                и дизайн сайтов в Figma/PS/AI/XD, логотипы<br />
+                <b>Навыки, знания, умения "ВЁРСТКА":</b>
+                HTML5(bootstrap,nunjucks)/CCS3(less,sass,scss), JS(jQuery),
+                flexbox/grid Кроссбраузерность, Блочная
+                фиксированная/резиновая вёрстка, Адаптивная вёрстка,
+                Responsive, Parallax scrolling, GitHub(Git), Gulp/Webpack,
+                WordPress, SVG, Адаптация/внедрение плагинов, Использование
+                спрайтов, Реализация pixel perfect,
+                Аккуратный/логичный/продуманный код, Комментарии
+              </p>
+              <p>
+                <b>ЭТАПЫ РАБОТЫ:</b><br />
+                - Общение в мессенджере по проекту с проработкой всех деталей
+                для понимания стека работы;<br />
+                - Составление тех задания;<br />
+                - Предоплата;<br />
+                - Прототипирование, уникальный дизайн, вёрстка, натяжка на
+                WP;<br />
+                - Сдача проекта, проветка, доработки, утверждение.
+              </p>
+            </div>
+            <a class="btn" href="#" data-modal="#modal_hire_me">Связаться</a>
+            <button class="btn btn--active" href="#" data-modal="#modal_resume">
+              Моё резюме
+            </button>
+          </div>
+          <!-- /.About__content -->
+        </div>
+        <!-- /.About__inner -->
+      </div>
+      <!-- /.Container -->
+    </section>
+
+    <!-- Reviews -->
+    <div class="reviews">
+      <div class="container">
+        <div class="reviews-slider">
+          <div class="reviews__item">
+            <div class="reviews__text">
+              <p>
+                Я остался полностью доволен качеством и оперативностью
+                выполнения работы. Со знанием
+                дела консультировал меня на каждом этапе разработки,
+                предостерегая от непредусмотрительных и предлагая более
+                грамотные решения. Выражаю глубокую благодарность за
+                проделанную работу.
+              </p>
+            </div>
+
+            <div class="reviews__author">
+              <img class="reviews__photo" src="images/reviews/1.jpg" alt="" />
+              <div class="reviews__name">Алексей Тимофеев</div>
+              <div class="reviews__rating">
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__text">
+              <p>
+                Спасибо компании за проделанную работу, сказать что я доволен
+                значит ничего не сказать. Отличный подход к работе, постоянная
+                связь,консультирование по всем мелочам, еще раз огромное
+                спасибо) Желаю успехов и процветания!
+              </p>
+            </div>
+
+            <div class="reviews__author">
+              <img class="reviews__photo" src="images/reviews/2.jpg" alt="" />
+              <div class="reviews__name">Игорь Королёв</div>
+              <div class="reviews__rating">
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+                <img class="reviews__star reviews__star--unactive" src="images/star.svg" width="13" height="13"
+                  alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__text">
+              <p>
+                Хотела бы поблагодарить Александра за все работы по
+                изготовлению сайта и грамотный подход к делу )) В планах
+                продолжить сотрудничество. Быстро, качественно, грамотно.
+                Спасибо )))
+              </p>
+            </div>
+
+            <div class="reviews__author">
+              <img class="reviews__photo" src="images/reviews/3.jpg" alt="" />
+              <div class="reviews__name">Светлана Гаврилова</div>
+              <div class="reviews__rating">
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__text">
+              <p>
+                Всё сделано на высшем уровне!!! Больше года я отказывался от
+                всех предложений по редизайну сайта. Предложение Александра
+                чем то меня подкупило, я согласился и не пожалел. Сделал в
+                обещанные сроки, учел все пожелания, оформил всё в лучшем
+                виде. Спасибо за качественно проделанную работу!!!
+              </p>
+            </div>
+
+            <div class="reviews__author">
+              <img class="reviews__photo" src="images/reviews/4.jpg" alt="" />
+              <div class="reviews__name">Антон Долименко</div>
+              <div class="reviews__rating">
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__text">
+              <p>
+                Спасибо, за создание отличного сайта! Делали все дистанционно,
+                никаких проблем) смело обращайтесь из любой точки мира😉😉
+                Всегда находится на связи и делает все вовремя! Индивидуальный
+                подход к любому типу работы. А всем желающим создать сайт
+                рекомендую довериться этому специалисту
+              </p>
+            </div>
+
+            <div class="reviews__author">
+              <img class="reviews__photo" src="images/reviews/5.jpg" alt="" />
+              <div class="reviews__name">Константин Аликов</div>
+              <div class="reviews__rating">
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+                <img class="reviews__star reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__text">
+              <p>
+                Выражаю огромнейшую благодарность Александру за проделанную
+                работу и неоценимую помощь в начальном развитии проекта. Было
+                предусмотрено все вплоть до мельчайших деталей и воплощено в
+                жизнь. Все мега круто! Сделал даже больше того, что я ожидала.
+                Спасибо, за столь быструю, но в то же время качественную
+                работу!
+              </p>
+            </div>
+
+            <div class="reviews__author">
+              <img class="reviews__photo" src="images/reviews/6.jpg" alt="" />
+              <div class="reviews__name">Ангелина Королёв</div>
+              <div class="reviews__rating">
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+                <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.Reviews__item -->
+      </div>
+      <!-- /.Container -->
+    </div>
+    <!-- /.Reviews -->
+
+    <!-- Blog -->
+    <section class="blog" id="blog">
+      <div class="container">
+        <div class="blog__header">
+          <div class="blog__title">Читать мой блог</div>
+          <div class="blog__text">Иногда я пишу что-нибудь умное</div>
+        </div>
+
+        <div class="articles">
+          <div class="articles__Col">
+            <div class="articles__item">
+              <div class="articles__header">
+                <time class="articles__date"> 08<br />июл </time>
+                <a class="articles__link" href="#">
+                  <img class="articles__photo" src="images/blog/1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="articles__content">
+                  <h4 class="articles__title">
+                    <a href="#">Битва титанов: normalize.css против reset.css</a>
+                  </h4>
+                  <div class="articles__cat">фронтенд</div>
+                <div class="articles__text">
+                  <p>
+                    Чтобы сайт отображался одинаково во всех браузерах
+                    используйте normalize.css. Расскажу где скачать полную
+                    версию и лайт версию для топовых браузеров
+                  </p>
+                </div>
+              </div>
+              <a class="btn btn--sm" href="#">Читать дальше</a>
+            </div>
+          </div>
+
+          <div class="articles__Col">
+            <div class="articles__item">
+              <div class="articles__header">
+                <time class="articles__date"> 06<br />июл </time>
+                <a class="articles__link" href="#">
+                  <img class="articles__photo" src="images/blog/2.jpg" alt="" />
+                </a>
+              </div>
+              <div class="articles__content">
+                  <h4 class="articles__title">
+                    <a href="#">Семантическая вёрстка сайта</a>
+                  </h4>
+                  <div class="articles__cat">фронтенд</div>
+                <div class="articles__text">
+                  <p>
+                    Как я начал использовать семантическую вёрстку и стал
+                    улучшать пользовательский опыт при помощи семантических
+                    тегов HTML5
+                  </p>
+                </div>
+              </div>
+              <a class="btn btn--sm" href="#">Читать дальше</a>
+            </div>
+          </div>
+
+          <div class="articles__Col">
+            <div class="articles__item">
+              <div class="articles__header">
+                <time class="articles__date"> 05<br />июл </time>
+                <a class="articles__link" href="#">
+                  <img class="articles__photo" src="images/blog/3.jpg" alt="" />
+                </a>
+              </div>
+              <div class="articles__content">
+                  <h4 class="articles__title">
+                    <a href="#">Связывание текстового редактора с Git</a>
+                  </h4>
+                  <div class="articles__cat">Инструменты</div>
+                <div class="articles__text">
+                  <p>
+                    Как указать текстовый редактор по умолчанию для Git.
+                    VSCode, Atom, TextMate, Nano, Sublime Text и другие
+                  </p>
+                </div>
+              </div>
+              <a class="btn btn--sm" href="#">Читать дальше</a>
+            </div>
+          </div>
+        </div>
+        <!-- /.articles__Col -->
+      </div><!-- /.articles -->
+      <div class="blog__footer">
+        <a class="blog__link" href="#">Больше постов</a>
+      </div>
+  </div><!-- /.Container -->
+  </section><!-- /.Blog -->
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__credits">
+          <div class="footer__copyright">
+            &copy; 2023 Сделано <span>Alexlev</span>
+          </div>
+
+          <div class="footer__social">
+            <a class="footer__social-link" href="#" target="_blank">
+              <img class="footer__social-img" src="images/social-footer/telegram.svg" alt="" />
+            </a>
+            <a class="footer__social-link" href="#" target="_blank">
+              <img class="footer__social-img" src="images/social-footer/vk.svg" alt="" />
+            </a>
+            <a class="footer__social-link" href="#" target="_blank">
+              <img class="footer__social-img" src="images/social-footer/behance.svg" alt="" />
+            </a>
+            <a class="footer__social-link" href="#" target="_blank">
+              <img class="footer__social-img" src="images/social-footer/whatsapp.svg" alt="" />
+            </a>
+            <a class="footer__social-link" href="#" target="_blank">
+              <img class="footer__social-img" src="images/social-footer/instagram.svg" alt="" />
+            </a>
+            <a class="footer__social-link" href="#" target="_blank">
+              <img class="footer__social-img" src="images/social-footer/youtube.svg" alt="" />
+            </a>
+          </div>
+          <!-- /.Footer__social -->
+        </div>
+        <!-- /.Footer__credits -->
+
+        <nav class="footer__nav">
+          <a class="footer__nav-link" href="#" data-scroll="#work">Портфолио</a>
+          <a class="footer__nav-link" href="#" data-scroll="#about">Обо мне</a>
+          <a class="footer__nav-link" href="#" data-scroll="#blog">Блог</a>
+          <a class="footer__nav-link" href="#" data-scroll="#contact">Контакты</a>
+          <a class="footer__nav-link footer__nav-link--btn" href="#" data-modal="#modal_hire_me">Связаться</a>
+        </nav>
+      </div>
+      <!-- /.Footer__inner -->
+    </div>
+    <!-- /.Container -->
+  </footer>
+  </div>
+
+  <!-- Modals -->
+  <div class="modal" id="modal_project_1">
+    <div class="modal__dialog modal__dialog-work">
+      <button class="modal__close" type="button" data-close>
+        <img src="images/modal/modal-close.svg" alt="Close" />
+      </button>
+
+      <div class="modal-work">
+        <div class="modal-work__preview">
+          <div data-slider="slick">
+            <div>
+              <img class="modal-work__photo" src="images/work/ironheroGYM/2.JPG" alt="" />
+            </div>
+            <div>
+              <img class="modal-work__photo" src="images/work/ironheroGYM/3.JPG" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="modal-work__content">
+          <div class="modal-work__header">
+            <h3 class="modal-work__title">IronheroGYM</h3>
+            <div class="modal-work__info">
+              Лендинги <span class="modal-work__info-divider">|</span> 2023
+            </div>
+          </div>
+
+          <div class="modal-work__client">
+            <div class="modal-work__client-title">Клиент:</div>
+            <div class="modal-work__client-company">Анатолий Кирский</div>
+          </div>
+
+          <div class="modal-work__text">
+            <p>
+              Спроектирован, а в дальнейшем разработан уникальный дизайн
+              макета, в темных тонах, с акцентным желтым цветом, с современным
+              внешним видом и удобным UX/UI интерфейсом
+            </p>
+            <p>
+              В работе использован эффект Parallax при скролинге, небольшие
+              анимации при наведении и выдвигающиеся карточки. Несколько
+              элегантных слайдеров для удобства, простой "аккордион" в разделе
+              ответов на вопросы, фиксированный хедер и плавная навигация по
+              всему сайту
+            </p>
+            <p>
+              Сайт полностью адаптивный и Кроссбраузерный, по этому на любом
+              устройстве и в любом браузере всё смотрится очень сочно, не
+              отдаляясь от запланированного дизайна
+            </p>
+          </div>
+
+          <a class="modal-work__link btn btn--active" href="https://alexxxlev.github.io/IronheroGYM/" target="_blank">Посмотреть
+            проект</a>
+
+          <div class="modal-work__footer">
+            <button class="modal-work__btn slickPrev" type="button">
+              <img src="images/modal/prev.svg" alt="" height="11" />
+              Назад
+            </button>
+            <button class="modal-work__btn slickNext" type="button">
+              Вперед
+              <img src="images/modal/next.svg" alt="" height="11" />
+            </button>
+          </div>
+        </div>
+        <!-- /.modal-work__content -->
+      </div>
+      <!-- /.modal-work -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+
+  <div class="modal" id="modal_project_2">
+    <div class="modal__dialog modal__dialog-work">
+      <button class="modal__close" type="button" data-close>
+        <img src="images/modal/modal-close.svg" alt="Close" />
+      </button>
+
+      <div class="modal-work">
+        <div class="modal-work__preview">
+          <div data-slider="slick">
+            <div>
+              <img class="modal-work__photo" src="images/work/arthome/2.JPG" alt="" />
+            </div>
+            <div>
+              <img class="modal-work__photo" src="images/work/arthome/3.JPG" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="modal-work__content">
+          <div class="modal-work__header">
+            <h3 class="modal-work__title">arthome</h3>
+            <div class="modal-work__info">
+              Лендинги <span class="modal-work__info-divider">|</span> 2023
+            </div>
+          </div>
+
+          <div class="modal-work__client">
+            <div class="modal-work__client-title">Клиент:</div>
+            <div class="modal-work__client-company">Виктор Похомов</div>
+          </div>
+
+          <div class="modal-work__text">
+            <p>
+              Данный проект представляет собой одностраничный сайт, специально
+              разработанный для максимальной эффективности в продвижении
+              творческого ручного ремесла. Верстка сайта выполнена с
+              использованием последних технологий, что обеспечивает отличное
+              отображение на всех устройствах, включая компьютеры, планшеты и
+              смартфоны.
+            </p>
+            <p>
+              Дизайн создан с учетом личного бренда и целевой аудитории.
+              Использованы современные и стильные элементы, чтобы привлечь
+              внимание посетителей и повысить конверсию. Цветовая гамма
+              подобрана таким образом, чтобы она соответствовала фирменной
+              идентичности и вызывала доверие у посетителей
+            </p>
+          </div>
+          <a class="modal-work__link btn btn--active" href="https://alexxxlev.github.io/artHome/" target="_blank">Посмотреть
+            проект</a>
+
+          <div class="modal-work__footer">
+            <button class="modal-work__btn slickPrev" type="button">
+              <img src="images/modal/prev.svg" alt="" height="11" />
+              Назад
+            </button>
+            <button class="modal-work__btn slickNext" type="button">
+              Вперед
+              <img src="images/modal/next.svg" alt="" height="11" />
+            </button>
+          </div>
+        </div>
+        <!-- /.modal-work__content -->
+      </div>
+      <!-- /.modal-work -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+
+  <div class="modal" id="modal_project_3">
+    <div class="modal__dialog modal__dialog-work">
+      <button class="modal__close" type="button" data-close>
+        <img src="images/modal/modal-close.svg" alt="Close" />
+      </button>
+
+      <div class="modal-work">
+        <div class="modal-work__preview">
+          <div data-slider="slick">
+            <div>
+              <img class="modal-work__photo" src="images/work/studychinese/2.JPG" alt="" />
+            </div>
+            <div>
+              <img class="modal-work__photo" src="images/work/studychinese/3.JPG" alt="" />
+            </div>
+            <div>
+              <img class="modal-work__photo" src="images/work/studychinese/4.JPG" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="modal-work__content">
+          <div class="modal-work__header">
+            <h3 class="modal-work__title">studychinese</h3>
+            <div class="modal-work__info">
+              Корпоративные <span class="modal-work__info-divider">|</span> 2023
+            </div>
+          </div>
+
+          <div class="modal-work__client">
+            <div class="modal-work__client-title">Клиент:</div>
+            <div class="modal-work__client-company">Артемий Кузнецов</div>
+          </div>
+
+          <div class="modal-work__text">
+            <p>
+              Большой проект онлайн школы по изучению Китайского языка. На сайте разработы личные кабинеты учителя и
+              ученика, с возможностью следить за прогрессом, уроками и балансом. Интеративная доска с огромными
+              возможностями начиная от рисования заканчивая видео-звонком для проведения онлайн занятий
+            </p>
+            <p>
+              Дизайн современный лаконичный с очень удобным и интуитивно понятным интерфейсом. На сайте реализовано
+              огромной количество слайдеров, табов, всплывающих окон, анимаций, проделана большая работа с svg
+              элементами
+            </p>
+          </div>
+          <a class="modal-work__link btn btn--active" href="https://alexxxlev.github.io/studychinese/demonstration.html"
+            target="_blank">Посмотреть проект</a>
+
+          <div class="modal-work__footer">
+            <button class="modal-work__btn slickPrev" type="button">
+              <img src="images/modal/prev.svg" alt="" height="11" />
+              Назад
+            </button>
+            <button class="modal-work__btn slickNext" type="button">
+              Вперед
+              <img src="images/modal/next.svg" alt="" height="11" />
+            </button>
+          </div>
+        </div>
+        <!-- /.modal-work__content -->
+      </div>
+      <!-- /.modal-work -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+
+  <div class="modal" id="modal_project_4">
+    <div class="modal__dialog modal__dialog-work">
+      <button class="modal__close" type="button" data-close>
+        <img src="images/modal/modal-close.svg" alt="Close" />
+      </button>
+
+      <div class="modal-work">
+        <div class="modal-work__preview">
+          <div data-slider="slick">
+            <div>
+              <img class="modal-work__photo" src="images/work/marcho/2.JPG" alt="" />
+            </div>
+            <div>
+              <img class="modal-work__photo" src="images/work/marcho/3.JPG" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="modal-work__content">
+          <div class="modal-work__header">
+            <h3 class="modal-work__title">marcho</h3>
+            <div class="modal-work__info">
+              Магазины <span class="modal-work__info-divider">|</span> 2023
+            </div>
+          </div>
+
+          <div class="modal-work__client">
+            <div class="modal-work__client-title">Клиент:</div>
+            <div class="modal-work__client-company">Ирина Мировская</div>
+          </div>
+
+          <div class="modal-work__text">
+            <p>
+              Интернет-магазин сочетает в себе инновационные технологии,
+              привлекательный дизайн и удобство использования для клиентов.
+            </p>
+            <p>
+              Дизайн разработан с учетом современных тенденций и требований
+              целевой аудитории. Использована интуитивно понятная навигация,
+              привлекательные изображения и эффективное размещение информации,
+              чтобы создать приятный и удобный опыт покупок для посетителей.
+            </p>
+            <p>
+              Функциональность магазина включает в себя множество
+              возможностей. Разработана удобная система фильтрации и
+              сортировки товаров, чтобы позволить пользователям быстро найти
+              то, что им нужно
+            </p>
+          </div>
+          <a class="modal-work__link btn btn--active" href="https://alexxxlev.github.io/marcho/" target="_blank">Посмотреть
+            проект</a>
+
+          <div class="modal-work__footer">
+            <button class="modal-work__btn slickPrev" type="button">
+              <img src="images/modal/prev.svg" alt="" height="11" />
+              Назад
+            </button>
+            <button class="modal-work__btn slickNext" type="button">
+              Вперед
+              <img src="images/modal/next.svg" alt="" height="11" />
+            </button>
+          </div>
+        </div>
+        <!-- /.modal-work__content -->
+      </div>
+      <!-- /.modal-work -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+
+  <div class="modal" id="modal_project_5">
+    <div class="modal__dialog modal__dialog-work">
+      <button class="modal__close" type="button" data-close>
+        <img src="images/modal/modal-close.svg" alt="Close" />
+      </button>
+
+      <div class="modal-work">
+        <div class="modal-work__preview">
+          <div data-slider="slick">
+            <div>
+              <img class="modal-work__photo" src="images/work/gosurf/2.JPG" alt="" />
+            </div>
+            <div>
+              <img class="modal-work__photo" src="images/work/gosurf/3.JPG" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="modal-work__content">
+          <div class="modal-work__header">
+            <h3 class="modal-work__title">GOSURF</h3>
+            <div class="modal-work__info">
+              ЛЕНДИНГИ <span class="modal-work__info-divider">|</span> 2023
+            </div>
+          </div>
+
+          <div class="modal-work__client">
+            <div class="modal-work__client-title">Клиент:</div>
+            <div class="modal-work__client-company">Carlos Goldman</div>
+          </div>
+
+          <div class="modal-work__text">
+            <p>
+              Наш лендинг - воплощение страсти к серфингу и визуальной эстетике. Уникальный и привлекательный дизайн
+              погрузит вас в
+              атмосферу безграничных океанских просторов, мощных волн и свободы, которую серфинг дарит. Каждый элемент
+              на странице
+              создан с любовью и вниманием к деталям, чтобы визуальный опыт был незабываемым.
+            </p>
+            <p>
+              Сайт также удобен и интуитивно понятен. Простая навигация и ясная структура позволят вам легко найти
+              нужную
+              информацию и быстро связаться с нами для бронирования и вопросов. Мы ценим ваше время и стараемся
+              предоставить вам
+              максимальный комфорт при использовании нашего сайта.
+            </p>
+          </div>
+          <a class="modal-work__link btn btn--active" href="https://alexxxlev.github.io/goSurf/app" target="_blank">Посмотреть
+            проект</a>
+
+          <div class="modal-work__footer">
+            <button class="modal-work__btn slickPrev" type="button">
+              <img src="images/modal/prev.svg" alt="" height="11" />
+              Назад
+            </button>
+            <button class="modal-work__btn slickNext" type="button">
+              Вперед
+              <img src="images/modal/next.svg" alt="" height="11" />
+            </button>
+          </div>
+        </div>
+        <!-- /.modal-work__content -->
+      </div>
+      <!-- /.modal-work -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+
+  <div class="modal" id="modal_project_6">
+    <div class="modal__dialog modal__dialog-work">
+      <button class="modal__close" type="button" data-close>
+        <img src="images/modal/modal-close.svg" alt="Close" />
+      </button>
+
+      <div class="modal-work">
+        <div class="modal-work__preview">
+          <div data-slider="slick">
+            <div>
+              <img class="modal-work__photo" src="images/work/paraffinka/2.JPG" alt="" />
+            </div>
+            <div>
+              <img class="modal-work__photo" src="images/work/paraffinka/3.JPG" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="modal-work__content">
+          <div class="modal-work__header">
+            <h3 class="modal-work__title">paraffinka</h3>
+            <div class="modal-work__info">
+              Блоги <span class="modal-work__info-divider">|</span> 2023
+            </div>
+          </div>
+
+          <div class="modal-work__client">
+            <div class="modal-work__client-title">Клиент:</div>
+            <div class="modal-work__client-company">Павел Дамаев</div>
+          </div>
+
+          <div class="modal-work__text">
+            <p>
+              Лендинг для пострясающих изделий из натурального соевого воска. Уютный минималистичных дизайн отражает всю красоту и гармонию которую создаю эти невероятные свечи
+            </p>
+            <p>
+              Продуман внешний вид под абсолютно все экраны и любые разрешения,а иак же Кроссбраузерность при посещении сайта с самого разного браузера хоть даже с Internet Explorer
+            </p>
+            <p>
+              Цвета подобраны максимально отображая направление деятельности, необычное расположение элементов приятно радует глаз целевой аудитории 
+            </p>
+          </div>
+          <a class="modal-work__link btn btn--active" href="https://alexxxlev.github.io/paraffinka/"
+            target="_blank">Посмотреть
+            проект</a>
+
+          <div class="modal-work__footer">
+            <button class="modal-work__btn slickPrev" type="button">
+              <img src="images/modal/prev.svg" alt="" height="11" />
+              Назад
+            </button>
+            <button class="modal-work__btn slickNext" type="button">
+              Вперед
+              <img src="images/modal/next.svg" alt="" height="11" />
+            </button>
+          </div>
+        </div>
+        <!-- /.modal-work__content -->
+      </div>
+      <!-- /.modal-work -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+
+  <div class="modal" id="modal_project_7">
+    <div class="modal__dialog modal__dialog-work">
+      <button class="modal__close" type="button" data-close>
+        <img src="images/modal/modal-close.svg" alt="Close" />
+      </button>
+
+      <div class="modal-work">
+        <div class="modal-work__preview">
+          <div data-slider="slick">
+            <div>
+              <img class="modal-work__photo" src="images/work/personal-blog/3.JPG" alt="" />
+            </div>
+            <div>
+              <img class="modal-work__photo" src="images/work/personal-blog/2.JPG" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="modal-work__content">
+          <div class="modal-work__header">
+            <h3 class="modal-work__title">PERSONAL BLOG</h3>
+            <div class="modal-work__info">
+              Блоги <span class="modal-work__info-divider">|</span> 2023
+            </div>
+          </div>
+
+          <div class="modal-work__client">
+            <div class="modal-work__client-title">Клиент:</div>
+            <div class="modal-work__client-company">Максим Тихомиров</div>
+          </div>
+
+          <div class="modal-work__text">
+            <p>
+              Это не просто блог, это источник вдохновения и удовольствия. Я создал пространство, где идеи переплетаются
+              с красочными
+              историями, и экспертные советы соседствуют с креативностью
+            </p>
+            <p>
+              В этом блоге каждая деталь пропитана эстетикой и функциональностью. Я посвятил много времени созданию
+              привлекательного
+              дизайна, который не только удовлетворяет глаз, но и создает потрясающий пользовательский опыт. Красивые
+              цвета,
+              гармоничные компоновки и интуитивно понятный интерфейс вдохновят вас на исследование и чтение.
+            </p>
+            <p>
+              Уникальный дизайн и современный интерфейс украшают каждую страницу, создавая гармоничную и привлекательную
+              атмосферу.
+              Отзывчивый дизайн позволяет наслаждаться контентом на любом устройстве - от компьютера до смартфона.
+            </p>
+          </div>
+          <a class="modal-work__link btn btn--active" href=" https://alexxxlev.github.io/personal_blog/"
+            target="_blank">Посмотреть
+            проект</a>
+
+          <div class="modal-work__footer">
+            <button class="modal-work__btn slickPrev" type="button">
+              <img src="images/modal/prev.svg" alt="" height="11" />
+              Назад
+            </button>
+            <button class="modal-work__btn slickNext" type="button">
+              Вперед
+              <img src="images/modal/next.svg" alt="" height="11" />
+            </button>
+          </div>
+        </div>
+        <!-- /.modal-work__content -->
+      </div>
+      <!-- /.modal-work -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+
+  <div class="modal" id="modal_resume">
+    <div class="modal__dialog">
+      <button class="modal__close" type="button" data-close>
+        <img src="images/modal/modal-close.svg" alt="Close" />
+      </button>
+
+      <div class="modal__content">
+        <h3 class="modal__title text-center">Резюме</h3>
+
+        <div class="text-center">
+          <a class="btn btn--thin btn--modal-sm" href="#">скачать PDF</a>
+          <a class="btn btn--thin btn--modal-sm" href="#">печать</a>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__Col timeline__Col--left">
+            <h4 class="timeline__title">Опыт</h4>
+
+            <div class="timeline__item">
+              <time class="timeline__date" datetime="01-14-2022">2022 - <b>Настоящее время</b></time>
+              <h5 class="timeline__subtitle">Фронтенд-разработчик</h5>
+              <div class="timeline__position">Фриланс</div>
+              <div class="timeline__text">
+                <p>
+                  Разработка лендингов, Корпоративных сайтов, блогов, интернет-магазинов, сайты под ключ,
+                  проектирование, дизайн сайта, верстка, посадка на WordPress, логотипы, небольшие игры на javascript
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline__item">
+              <time class="timeline__date" datetime="01-14-2022">2022</time>
+              <h5 class="timeline__subtitle">Фронтенд-разработчик</h5>
+              <div class="timeline__position">HTML Academy</div>
+              <div class="timeline__text">
+                <p>
+                  Вёрстка сайтов, адаптивная вёрстка и автоматизация, разработка веб-интерфейсов, подготовка вёрстки для
+                  CMS, вёрстка React-компонентов
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline__item">
+              <time class="timeline__date" datetime="01-14-2022">2021 - 2022</time>
+              <h5 class="timeline__subtitle">Верстальщик</h5>
+              <div class="timeline__position">Фриланс</div>
+              <div class="timeline__text">
+                <p>
+                  Вёрстка лендингов, Корпоративных сайтов, сайтов-визиток, доработки, посадка на хостинг, перенос
+                  хостинга, логотипы
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline__item">
+              <time class="timeline__date" datetime="01-14-2021">2021</time>
+              <h5 class="timeline__subtitle">Верстальщик</h5>
+              <div class="timeline__position">VADIM PROKOPCHUK</div>
+              <div class="timeline__text">
+                <p>
+                  Основы HTML/CSS, верстка лендингов, препроцессоры SASS/SCSS, Gulp 4, Git, верстка
+                  интернет-магазинов(хлебные крошки, пагинация, звездный рейтинг, карточки товаров, каталог), WordPress,
+                  Bootstrap 4
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline__Col timeline__Col--right">
+            <h4 class="timeline__title">Образование</h4>
+
+            <div class="timeline__item">
+              <time class="timeline__date" datetime="01-14-2010">2021 - <b>Настоящее время</b></time>
+              <h5 class="timeline__subtitle">Frontend-разработчик</h5>
+              <div class="timeline__position">Ростов-на-Дону</div>
+            </div>
+
+            <div class="timeline__item">
+              <time class="timeline__date" datetime="01-14-2005">2017 - 2021</time>
+              <h5 class="timeline__subtitle">Инженер-метролог</h5>
+              <div class="timeline__position">ДГТУ, Ростов-на-Дону</div>
+            </div>
+
+            <h4 class="timeline__title">Навыки</h4>
+
+            <div class="progress-bar">
+              <div class="progress-bar__item">
+                <div class="progress-bar__left">
+                  <div class="progress-bar__title">JavaScript</div>
+                </div>
+                <div class="progress-bar__right">
+                  <div class="progress-bar__bar">
+                    <div class="progress-bar__progress" style="width: 85%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress-bar__item">
+                <div class="progress-bar__left">
+                  <div class="progress-bar__title">Вёрстка</div>
+                </div>
+                <div class="progress-bar__right">
+                  <div class="progress-bar__bar">
+                    <div class="progress-bar__progress" style="width: 90%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress-bar__item">
+                <div class="progress-bar__left">
+                  <div class="progress-bar__title">Дизайн</div>
+                </div>
+                <div class="progress-bar__right">
+                  <div class="progress-bar__bar">
+                    <div class="progress-bar__progress" style="width: 80%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress-bar__item">
+                <div class="progress-bar__left">
+                  <div class="progress-bar__title">Wordpress</div>
+                </div>
+                <div class="progress-bar__right">
+                  <div class="progress-bar__bar">
+                    <div class="progress-bar__progress" style="width: 70%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.progress-bar -->
+
+            <h4 class="timeline__title">Награды</h4>
+
+            <div class="timeline__item">
+              <time class="timeline__date" datetime="01-14-2023">2023</time>
+              <h5 class="timeline__subtitle">Золотой код</h5>
+              <div class="timeline__position">Tagline Awards</div>
+              <div class="timeline__text">
+                <p>
+                  Признается за выдающиеся достижения в создании чистого, эффективного и инновационного кода
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline__item">
+              <time class="timeline__date" datetime="01-14-2022">2022</time>
+              <h5 class="timeline__subtitle">Виртуозный интерфейс</h5>
+              <div class="timeline__position">RUWARD Award</div>
+              <div class="timeline__text">
+                <p>
+                  Награда за выдающуюся экспертизу в создании удивительно интуитивных и привлекательных пользовательских
+                  интерфейсов
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- /.timeline__Col--right -->
+        </div>
+        <!-- /.timeline -->
+
+        <div class="text-center">
+          <a class="btn btn--modal-sm" href="#">Связаться</a>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <div class="modal modal__hire_me" id="modal_hire_me">
+    <div class="modal__dialog modal__dialog--sm">
+      <button class="modal__close" type="button" data-close>
+        <img src="images/modal/modal-close.svg" alt="Close" />
+      </button>
+
+      <div class="contact">
+        <div class="contact__left">
+          <h3 class="modal__title modal__title-content mb-0">Для связи</h3>
+          <h4 class="modal__subtitle">позвоните мне или отправьте запрос</h4>
+
+          <ul class="contact__info">
+            <li class="contact__info-item">
+              <a href="tel:+79286144646">
+                <img class="contact__info-icon" src="images/modal/phone.svg" alt="" />
+                8(928)614-46-46
+              </a>
+            </li>
+            <li class="contact__info-item">
+              <a href="mailto:alexxx.lev@yandex.ru">
+                <img class="contact__info-icon" src="images/modal/email.svg" alt="" />
+                alexxx.lev@yandex.ru
+              </a>
+            </li>
+          </ul>
+
+          <form class="form" action="/" method="post">
+            <div class="form__group">
+              <label class="form__label" for="input-email">E-mail адрес</label>
+              <input class="form__input" name="input-email" type="text" id="input-email"
+                placeholder="Введите ваш e-mail" />
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="input-text">Сообщение</label>
+              <textarea class="form__textarea" name="input-text" id="input-text"
+                placeholder="Введите своё сообщение..."></textarea>
+            </div>
+
+            <div class="text-right">
+              <button class="btn btn--modal-hireme" type="submit">
+                Отправить
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- /.contact__left -->
+
+        <div class="contact__right">
+          <img class="contact__photo" src="images/modal/1.jpg" alt="" />
+        </div>
+      </div>
+      <!-- /.contact -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <!-- JS -->
+  <script src="js/slick.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

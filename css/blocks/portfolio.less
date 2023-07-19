@@ -1,0 +1,21 @@
+// main: ../style.less
+
+.portfolio {
+  margin-bottom: 2.8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+
+  @media @notebook {
+    grid-gap: 25px 20px;
+  }
+
+  @media @tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media @mobile-sm {
+    margin-bottom: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

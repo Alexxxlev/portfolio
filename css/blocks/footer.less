@@ -1,0 +1,158 @@
+// main: ../style.less
+
+.footer {
+  padding: 1.2rem 0;
+  background-color: @black;
+
+  &__social {
+    display: flex;
+    align-items: center;
+
+    @media @tablet {
+      order: 1;
+    }
+
+    @media @mobile-sm {
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  &__social-link {
+    margin-top: 0.33rem;
+    margin-right: 1.2rem;
+    text-decoration: none;
+    transition: transform .2s linear;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    @media @tablet {
+      margin: 0 .5rem;
+    }
+  }
+
+  &__social-img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__credits {
+  display: flex;
+  align-items: center;
+
+  @media @tablet {
+    width: 100%;
+    justify-content: center;
+    order: 2;
+  }
+
+  @media @mobile-sm {
+    flex-direction: column;
+  }
+}
+
+.footer__copyright {
+  padding-right: 0.8rem;
+  margin-right: 1rem;
+  font-size: 0.93rem;
+  color: #8D8D8E;
+  border-right: 1px solid rgba(@gray, .35);
+
+  span {
+    color: @white;
+  }
+
+  @media @tablet {
+    order: 2;
+
+    padding-right: 0;
+    padding-left: 0.8rem;
+    margin-right: 0;
+
+    border-right: none;
+    border-left: 1px solid rgba(@gray, .35);
+  }
+
+  @media @mobile-sm {
+    margin-bottom: 0.6rem;
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+.footer__nav {
+  display: flex;
+  align-items: center;
+  font-size: 0.93rem;
+
+  @media @tablet {
+    margin-bottom: .5rem;
+
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    order: 1;
+  }
+}
+
+.footer__nav-link {
+  margin-left: 1.5rem;
+  color: #8D8D8E;
+  text-decoration: none;
+  position: relative;
+
+  @media @tablet {
+    margin: 0 .5rem .5rem;
+  }
+
+  @media @mobile-sm {
+    margin: 0 .5rem 1rem;
+  }
+
+  &:after {
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: #8D8D8E;
+
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    z-index: 1;
+
+    transition: width .2s linear;
+  }
+
+  &:hover:not(.footer__nav-link--btn) {
+
+    &:after {
+      width: 100%;
+    }
+  }
+
+  &--btn {
+    padding: 0.5rem 1.4rem;
+
+    border: 1px solid @gray-light;
+    border-radius: 20px;
+    line-height: 1.1;
+
+    transition: background-color .2s linear, border-color .2s linear;
+
+    &:hover {
+      text-decoration: none;
+      background-color: #8D8D8E;
+      border-color: #8D8D8E;
+      ;
+      color: @black;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+// main: ../style.less
+
+.blog {
+  margin: 14rem 0 7rem;
+
+  @media @tablet {
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+  }
+
+  @media @mobile-sm {
+    margin: 11rem 0 4rem;
+  }
+}
+
+.blog__header {
+  margin-bottom: 3.6rem;
+  text-align: center;
+
+  @media @mobile-sm {
+    margin-bottom: 2rem;
+  }
+}
+
+.blog__title {
+  margin-bottom: 0.3rem;
+
+  font-size: 3rem;
+  color: @black;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media @mobile {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 1.65rem;
+  }
+}
+
+.blog__text {
+  font-size: 1.2rem;
+  color: @gray-light;
+  font-weight: 300;
+
+  @media (max-width: 375px) {
+    font-size: 1rem;
+    letter-spacing: -.2px;
+  }
+}
+
+.blog__footer {
+  margin-right: 1rem;
+  text-align: right;
+
+  @media @mobile {
+    margin-right: 0;
+    text-align: center;
+  }
+}
+
+.blog__link {
+  font-size: 0.93rem;
+  color: @gray;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
